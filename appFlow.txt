@@ -1,10 +1,5 @@
-1. Menu (odabrati 1/4 operacije + history)
-2. Odabir operacije -> igra
-
-IGRA:
-- 10 pitanja
-- prati statistiku tocno/netocno
-- krad zavrsi -> unesi u history
-
-3. rezultat
-4. pristisni enter za restart
+1. Napraviti razine
+2. Napraviti random game
+3. Broj rundi
+4. Timer
+5. Update statistike
