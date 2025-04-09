@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Marko\\Desktop\\Portfolio\\C#\\Ucenje\\Math Game\\Math Game.csproj": {}
+    "C:\\Users\\Marko\\Desktop\\Portfolio\\C#\\Ucenje\\Math Game\\Math Game.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Marko\\Desktop\\Portfolio\\C#\\Ucenje\\Math Game\\Math Game.csproj": {
+    "C:\\Users\\Marko\\Desktop\\Portfolio\\C#\\Ucenje\\Math Game\\Math Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Marko\\Desktop\\Portfolio\\C#\\Ucenje\\Math Game\\Math Game.csproj",
+        "projectUniqueName": "C:\\Users\\Marko\\Desktop\\Portfolio\\C#\\Ucenje\\Math Game\\Math Game.csproj",
         "projectName": "Math Game",
-        "projectPath": "c:\\Users\\Marko\\Desktop\\Portfolio\\C#\\Ucenje\\Math Game\\Math Game.csproj",
+        "projectPath": "C:\\Users\\Marko\\Desktop\\Portfolio\\C#\\Ucenje\\Math Game\\Math Game.csproj",
         "packagesPath": "C:\\Users\\Marko\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Marko\\Desktop\\Portfolio\\C#\\Ucenje\\Math Game\\obj\\",
+        "outputPath": "C:\\Users\\Marko\\Desktop\\Portfolio\\C#\\Ucenje\\Math Game\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Marko\\AppData\\Roaming\\NuGet\\NuGet.Config"

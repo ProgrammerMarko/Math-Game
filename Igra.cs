@@ -9,10 +9,10 @@ public static class Igra
         switch (menuInput)
         {
             case 1:
-                gameZbrajanje();
+                game(zbrajanje, '+');
                 break;
             case 2:
-                gameOduzimanje();
+                game(oduzimanje, '-');
                 break;
             case 3:
                 gameMnozenje();
@@ -29,41 +29,38 @@ public static class Igra
         }
     }
 
-    public static void gameZbrajanje()
+    // metoda x(metoda z)
+    // metoda game(metoda int (x, y))
+    public static int zbrajanje(int x, int y)
     {
-        int rounds = 10;
-        int tocno = 0;
-        Random random = new Random();
-
-        while (rounds > 0)
-        {
-            int a = random.Next(0, 100);
-            int b = random.Next(0, 100);
-
-            Console.WriteLine($"Runda: {11 - rounds}/10");
-            Console.Write($"{a} + {b} = ");
-            int result = Convert.ToInt32(Console.ReadLine());
-
-            if ((a + b) == result)
-            {
-                tocno++;
-                Console.WriteLine("Točno!");
-            }
-            else
-            {
-                Console.WriteLine("Netočno!");
-            }
-
-            rounds--;
-        }
-
-        Grafika.printResult(tocno);
-        resultsList.Add($"+ | {tocno}/10");
+        return x + y;
     }
 
-    public static void gameOduzimanje()
+    public static int oduzimanje(int x, int y)
     {
-        int rounds = 10;
+        return x - y;
+    }
+
+    public static int mnozenje(int x, int y)
+    {
+        return x * y;
+    }
+
+    public static int djeljenje(int x, int y)
+    {
+        return x / y;
+    }
+
+    // string name = "Marko"
+    // string helloName(string x) {return $"Hello {x}"}
+    // helloName(name)
+    // helloName:
+    // 1. x = name => Marko ==> x = "Marko"
+
+    // int operacije(int x, int y);
+    public static void game(Func<int, int, int> operacija, char operacijaChar)
+    {
+        int rounds = 3;
         int tocno = 0;
         Random random = new Random();
 
@@ -72,25 +69,27 @@ public static class Igra
             int a = random.Next(0, 100);
             int b = random.Next(0, 100);
 
-            Console.WriteLine($"Runda: {11 - rounds}/10");
-            Console.Write($"{a} - {b} = ");
-            int result = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Runda: {4 - rounds}/3");
+            Console.Write($"{a} {operacijaChar} {b} = ");
+            int resultInput = Convert.ToInt32(Console.ReadLine());
 
-            if ((a - b) == result)
+            //    public static int zbrajanje(int x, int y)
+            //    {
+            //        return x + y;
+            //    }
+            int result = operacija(a, b);
+
+            if (resultInput == result)
             {
                 tocno++;
-                Console.WriteLine("Točno!");
-            }
-            else
-            {
-                Console.WriteLine("Netočno!");
             }
 
             rounds--;
         }
 
+        Console.WriteLine("");
         Grafika.printResult(tocno);
-        resultsList.Add($"- | {tocno}/10");
+        resultsList.Add($"+ | {tocno}/10");
     }
 
     public static void gameMnozenje()

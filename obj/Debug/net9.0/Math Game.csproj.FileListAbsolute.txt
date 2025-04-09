@@ -12,3 +12,4 @@ c:\Users\Marko\Desktop\Portfolio\C#\Ucenje\Math Game\obj\Debug\net9.0\refint\Mat
 c:\Users\Marko\Desktop\Portfolio\C#\Ucenje\Math Game\obj\Debug\net9.0\Math Game.pdb
 c:\Users\Marko\Desktop\Portfolio\C#\Ucenje\Math Game\obj\Debug\net9.0\Math Game.genruntimeconfig.cache
 c:\Users\Marko\Desktop\Portfolio\C#\Ucenje\Math Game\obj\Debug\net9.0\ref\Math Game.dll
+c:\Users\Marko\Desktop\Portfolio\C#\Ucenje\Math Game\obj\Debug\net9.0\Math Game.sourcelink.json
